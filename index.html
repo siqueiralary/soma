@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Chakra+Petch:wght@300&family=Cinzel&family=Prompt:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma com JS</title>
+</head>
+<body>
+
+    <div class="container">
+    <h1>Soma usando DOM</h1>
+
+    <input type="number" name="valor1" id="valor1"> 
+    <div class="soma">+</div>
+    <input type="number" name="valor2" id="valor2">
+    <input type="button" value="SOMAR" onclick="somar()">
+    <div id="res">Resultado</div>
+
+    <script>
+        function somar() {
+            var v1 = window.document.getElementById('valor1');
+            var v2 = window.document.querySelector('input#valor2');
+            var res = window.document.getElementById('res');
+
+            var n1 = Number(v1.value)
+            var n2 = Number(v2.value)
+            var s = n1 + n2
+
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}.`
+
+        }
+    </script>
+    </div>
+
+    <footer class="fixarRodape">
+        <p>&copy; 2023 - Laryssa Siqueira</p>
+    </footer>
+
+
+    
+</body>
+</html>

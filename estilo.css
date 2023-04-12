@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(back1.jpg);
+    background-size: auto;
+
+}
+
+.container h1 {
+    font-family: 'Shadows Into Light', cursive;
+    color: #ffffff;
+    text-shadow: 3px 3px 3px #2c2c2c;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#res {
+   font-size: 25px;
+   font-family: sans-serif;
+}
+
+.soma {
+    font-size: 50px;
+    background-color:#ff0000b7;
+    border-radius: 3px 3px 3px 3px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Prompt', sans-serif;
+}
+
+input{
+    font-size: 20px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #cccccc;
+    border: 1px solid #000000;
+    width: 150px;
+}
+
+input:hover {
+    background: #ffffff;
+    border: 1px solid #990000;
+}
+
+.fixarRodape {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: #f1f1f1;
+    background-color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
